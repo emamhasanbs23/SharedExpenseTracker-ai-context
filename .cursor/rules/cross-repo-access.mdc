@@ -1,0 +1,17 @@
+---
+description: Global cross-repo access policy — applies to every AI agent working from this repo (Claude, Cursor, or any other)
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Cross-Repo Access (Sibling Repos)
+
+From this repo, an AI agent may access these sibling repos (located alongside this one under `SharedExpense Tracker All/`): `shared-expense-api`, `shared-expense-mobile`.
+
+- **Read**: allowed in the repos listed above, EXCEPT `.env` files or any other files containing sensitive data (secrets, credentials, keys, tokens). Do not access files outside these listed repos.
+- **Write**: ask the user for permission once per session before writing any file/folder in a given sibling repo (e.g., ask once before the first write to `shared-expense-api`; subsequent writes in that repo within the same session don't need to ask again).
+- **Before writing anything to any repo**: first read that repo's own context/rules file (`CLAUDE.md`, `.cursorrules`, `.cursor/rules/*`, or equivalent) if one exists, and follow it.
+- **Git operations**: always ask the user for permission before any git operation (commit, push, branch, etc.) in any of these sibling repos, every time.
+
+This is a global policy for this repo and applies to every AI agent, regardless of tool (Claude, Cursor, etc.). The same rule is mirrored in `CLAUDE.md`.

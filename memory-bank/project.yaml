@@ -1,0 +1,17 @@
+# Project Configuration
+
+project_type: full-stack-mobile-backend
+initialized_at: 2026-11-05T00:00:00Z
+
+repos:
+  - name: shared-expense-api
+    path: ../shared-expense-api
+    type: backend-api
+    stack: Node.js, JavaScript, Express, Sequelize, PostgreSQL, Redis, BullMQ
+    status: planned
+  - name: shared-expense-mobile
+    path: ../shared-expense-mobile
+    type: mobile
+    stack: Flutter
+    status: planned
+    notes: Integrate after API contracts stabilize (Week 8)

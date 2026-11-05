@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "name": "SharedExpenseTracker-ai-context",
+      "path": "."
+    },
+    {
+      "name": "shared-expense-api",
+      "path": "../shared-expense-api"
+    },
+    {
+      "name": "shared-expense-mobile",
+      "path": "../shared-expense-mobile"
+    }
+  ],
+  "settings": {}
+}

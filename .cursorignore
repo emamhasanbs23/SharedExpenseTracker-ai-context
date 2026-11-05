@@ -1,0 +1,14 @@
+# Cross-repo access — block secrets in sibling repos
+# See CLAUDE.md and .cursor/rules/cross-repo-access.mdc
+
+../shared-expense-api/**/.env*
+../shared-expense-api/**/*secret*
+../shared-expense-api/**/*credentials*
+../shared-expense-api/**/*.pem
+../shared-expense-api/**/*.key
+
+../shared-expense-mobile/**/.env*
+../shared-expense-mobile/**/*secret*
+../shared-expense-mobile/**/*credentials*
+../shared-expense-mobile/**/*.pem
+../shared-expense-mobile/**/*.key
